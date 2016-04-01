@@ -1,0 +1,17 @@
+@import './libs/sample.css';
+
+$color: #000;
+
+@define-mixin icon $name {
+  padding-left: 16px;
+
+  &::after {
+    content: "";
+    background-url: url(/icons/$(name).png);
+  }
+}
+
+html {
+  background: $color;
+  @mixin icon search;
+}

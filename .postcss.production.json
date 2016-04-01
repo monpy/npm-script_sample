@@ -1,0 +1,12 @@
+{
+  "use": [
+    "postcss-import",
+    "precss",
+    "autoprefixer",
+    "cssnano"
+  ],
+  "parser": "postcss-scss",
+  "autoprefixer": {
+    "browsers": "last 2 versions"
+  }
+}
